@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>Ervin Tasnadi's bio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+<style>
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: calc(1em + 1vw);
+}
+
+.container {
+	display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.box-side {
+  display: flex;
+  padding: 2vw;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: rgb(61, 95, 122);
+  flex-direction: column;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  padding-left: 4vw;
+  padding-bottom: 2vw;
+}
+
+.image-container {
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.icons{
+  padding: 1em;
+  margin:0;  
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon {
+  width: 1.5em;
+  padding: 0 1em;
+}
+
+.jobtasks {
+  font-size: smaller;
+}
+
+@media print {
+  body{
+    font-size: calc(0.4em + 0.4vw);
+  }
+  
+  .container {  
+    flex-direction: row;
+    min-height: 100%;
+  }
+  
+  .image-container {
+    padding-top: 0em;
+  }
+  
+  .image-container img{
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .icon {
+    width: 1em;
+    padding: 0 0.5em;
+  }
+
+  .icons{
+    padding-top: 3em;    
+  }
+}
+
+@media screen and (min-width: 80em) {
+  body{
+    font-size: calc(0.4em + 0.4vw);
+  }
+  
+  .container {  
+    flex-direction: row;
+    min-height: 100%;
+    padding-right: 10em;
+  }
+  
+  .image-container {
+    padding-top: 0em;
+  }
+  
+  .image-container img{
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .icon {
+    width: 1em;
+    padding: 0 0.5em;
+  }
+
+  .icons{
+    padding-top: 3em;    
+  }
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: URL('Abel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: URL('Archivo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS';
+    src: URL('OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: URL('PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+h2 {
+  font-family: Abel;
+}
+
+span.blockspam {
+  display: none;
+}
+
+.date {
+  color: gray;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  display: block;
+  font-family: Playfair;
+}
+
+</style>
+</head>
+<body>
+
+<!--
+
+container
+  - box-side
+    - image-container
+    - about-wrapper
+  - box-content
+
+-->
+
+<div class="container">
+  <div class="box-side">
+    <div class="image-container">
+      <img alt="Main photo" src="X.jpg">
+    </div>
+    
+    <div>
+      <h2 style="font-family: Playfair">Ervin Tasnadi, Ph.D.</h2>
+      <hr style="width: 5em; color: white;">
+      <h4 style="font-family: Archivo; text-transform: capitalize;">
+        Biomedical imaging scientist &amp; <br> Machine learning engineer
+      </h4>
+    </div>
+    
+    <p style="font-family: Archivo; text-align: center;">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path fill="white" d="M172.3 501.7C27 291 0 269.4 0 192 0 86 86 0 192 0s192 86 192 192c0 77.4-27 99-172.3 309.7-9.5 13.8-29.9 13.8-39.5 0zM192 272c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80z"/>
+      </svg> Budapest area, HU (EU)
+    </p>
+
+    <div>
+      
+    </div>
+
+    <div>
+      <h3 style="font-family: Abel;">Contact:</h3>
+      <!-- https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/ -->
+      <p style="font-family: Archivo;">
+        eta<span class="blockspam" aria-hidden="true">@gmail</span>snadi<!-- .com -->@protonmail.com
+      </p>
+
+      <p style="font-family: Archivo;">PGP fingerprint:<br>
+        <span style="font-family: monospace; font-size: 0.5em;">a1d4c3cb8df2df03cb54d64452bc1c591894742f</span>
+      </p>
+
+      <ul class="icons">
+        <li class="item">
+          <a href="https://scholar.google.com/citations?user=SwPa9T0AAAAJ&hl=hu&oi=ao">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path fill="white" d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/>
+          </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a href="https://www.linkedin.com/in/ervin-%C3%A1ron-tasn%C3%A1di-146aab2b/">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path fill="white" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+          </svg>
+          </a>
+        </li>
+        <li class="item">
+          <a href="https://github.com/etasnadi/">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path fill="white" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+          </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box-content" style="font-family: Archivo;">
+    <div>
+      <h2>Bio</h2>
+      <p style="font-family: Archivo;">I am a biomedical imaging scientist and machine learning engineer who has 8 years of experience with building deep neural networks, machine learning, parallel programming, natural language processing and enterprise software development.
+      </p>
+    </div>
+
+    <div>
+      <h2>Skills</h2>
+      <div>
+        <ul>
+          <li>Parallel computing: OpenCL 1.2, CUDA, OpenMP</li>
+          <li>Machine learning &amp; scientific computing: MATLAB, Python, Tensorflow, PyTorch, NumPy, SciPy, scikit-image, scikit-learn</li>
+          <li>Programming languages: C, C++, Java, PHP</li>
+          <li>Graphics programming: OpenGL, Vulkan, path tracink, BVH</li>
+          <li>Server side programming, databases: SQL, SQL Server, Java EE, Spring MVC, Object Relational Mapping.</li>
+          <li>Version control systems: Git, SVN.</li>
+          <li>Operating systems: Linux (debian derivatives)</li>
+          <li>Writing research papers, giving presentations efficient collaboration and communication.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h2>Employment and experience</h2>
+      <div style="font-family: Archivo">
+      <p>
+        <b>Machine learning engineer, applied scientist (deep neural networks for microscopy image analysis), part time</b><br>
+        <a href="https://single-cell-technologies.com/">Single-Cell Technologies Ltd.</a><br>
+        <span class="date">2022-</span>
+        <p class="jobtasks">
+            <ul style="font-size: smaller">
+              <li>Efficient implementation of deep neural network based computer vision algorithms for instance segmentation and classification of microscopy and pathology images in 2D and 3D with Tensorflow C API and C++, OpenCV, CUDA.</li>
+            </ul>
+        </p>
+      </p>
+      <p>
+        <b>Researcher in microscopy image analysis </b><br>
+        <a href="http://group.szbk.u-szeged.hu/sysbiol/horvath-peter-lab-index.html">Biological Research Centre, Biological Image Analysis and Machine Learning Group (BIOMAG)</a> <br>
+        <span class="date">2016-</span>
+        <ul style="font-size: smaller">
+          <li>Image analysis pipelines (instance segmentation, classification, tracking) for high-throughput micoroscopy images of single-cells in 2D and 3D for several systems biology research projects.</li>
+          <li>Building deep neural networks & training pipeline for image analysis from scratch (Tensorflow, PyTorch)
+          <li>Ultra fast deep learnning based single-cell segmentnation and tracking for 3D for laser scanning microscopy images. </li>
+          <li>Efficient implementation of a DIC image reconstruction algorithm with OpenCL.</li>
+          <li>Development of synthetic data generation pipelines with image style transfer and GANs for 2D instance segmentation.</li>
+          <li>Development of a novel 3D active contour method for nuclei segmentation in 3D, numerical approximation with finite differences, efficient implementation in CUDA and C++, 3D visualization with MITK, Qt, visualization with vispy.</li>
+          <li>Worked on the statistical analysis of multi-omics data (genomics, proteomics) in several projects.
+          <li>Collaboration in several international research consortiums.</li>          
+        </ul>
+      </p>
+      <p>
+        <b>Research Assistant in data mining and natural language processing</b> <br>
+        <a href="https://www.u-szeged.hu">University of Szeged, Department of Artificial Intelligence</a> <br>
+        <span class="date">2014-2015</span>
+        <ul style="font-size: smaller">
+          <li>Analysis of social networks using graph algorithms and machine learning: personalized PageRank, power iteration, random walks, logistic regression, sentiment analysis.</li>
+          <li>Analysis of social media posts using conditional random fields, discriminative modeling, feature extraction, n-grams, L-BFGS.</li>
+        </ul>
+      </p>
+      <p>
+        <b>Software Engineer, full stack developer (Java Enterprise Edition)</b> <br>
+        <a href="https://epam.com">EPAM Systems, Inc</a> <br>
+        <span class="date">2011-2012</span>
+        <ul style="font-size: smaller">
+          <li>Development of content management systems with 3-tier architecture in Java Enterprise Edition (EJB 3.0)</li>
+          <li>Planning entity relationships, database schemas in SQL Server, schema normalization, writinng, refactoring T-SQL stored procedures, implementing object relational mapping and caching</li>
+          <li>Development of web interface with sping MVC, HTML, CSS and jQuery.</li>
+        </ul>
+      </p>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <div style="font-family: Archivo">
+          <p>
+            <b>Doctor of philosophy (Ph.D.) in Computer Science</b> <br>
+            <a href="https://www.u-szeged.hu">University of Szeged</a><br>
+            <span class="date">2017-2021</span> <br>
+            Supervisor: Dr. Peter Horvath <br>
+            Thesis: Active contour and deep learning methods for single-cell segmentation in microscopy images (2023)
+          </p>
+          <p>
+            <b>MSc in Computer Science</b> <br>
+            <a href="https://www.u-szeged.hu">University of Szeged</a><br>
+            <span class="date">2012-2017</span>
+          </p>
+          <p>
+            <b>Business Information Technology</b> <br>
+            <a href="https://www.u-szeged.hu">University of Szeged</a><br>
+            <span class="date">2007-2010</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2>Publications</h2>
+
+    <div>
+    See <a href="https://scholar.google.com/citations?user=SwPa9T0AAAAJ&hl=hu&oi=ao">my Google Scholar page</a> for the full list of publications I co-authored.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
